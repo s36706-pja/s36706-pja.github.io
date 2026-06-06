@@ -1,89 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content=width=device-width,initial-scale=1.0>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Najpiękniejsze miasta w Hiszpanii</title>
-    <link rel="stylesheet"href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <header>
         <div class="container">
         <h1>Najpiękniejsze miasta Hiszpanii</h1>
-        <p>
-         Przewodnik po najciekawszych miejscach w Hiszpanii.
-        </p>
-    <nav>
-    <a href="index.html">Strona główna</a>
-    <a href="walencja.html">Walencja</a>
-    <a href="barcelona.html">Barcelona</a>
+        <p>Przewodnik po najciekawszych miejscach w Hiszpanii.</p>
+        <nav>
+            <a href"index.html" class="nav-link active">Strona główna</a>
+            <a href"walencja.html" class="nav-link">Walencja</a>
+            <a href"barcelona.html" class="nav-link">Barcelona</a>
+        </nav>
         </div>
     </header>
-    <main>
-        <section class="hero">
-            <h2>Odkryj Hiszpanię</h2>
-            <p>Hiszpania jest jednym z najczesciej odwiedzanych krajów Europy Znana jest z pięknych plaż, zabytków oraz wyjątkowej kultury.<p>
-                <img src="Hiszpania.jpg">
-                </section>
-            <section>
-                <h2>Dlaczego warto odwiedzic Hiszpanię?</h2>
-                <p>
-                    <strong>Hiszpania</strong>zachwyca klimatem, <u>architekturą</u>, oraz <em>kuchnią śródziemnomorską</em>.
-                </p>
-                <p> Co roku odwiedzają ją miliony turystów z całego świata.
-                </p>
-                </section>
-       <section>
-           <h2>Najpopularniejsze miasta</h2>
-           <div class="gallery">
-               <div class="card">
-                   <img src=
-                       <h3>Walencja</h3>
-                   <p>Miasto sztuki, nauki, i pięknych plaż.</p>
-                   <a class="btn" href+"walencja.html">
-                       Czytaj więcej 
-                   </a>
-               </div>
-               <div class="card">
-                   <img src="img/barcelona.jpg" alt="Barcelona">
-                   <h3>Barcelona</h3>
-               <p> Jedno z najpiękniejszych miat Europy.</p>
-                   <a class="btn" href="barcelona.html">
-                       Czytaj więcej 
-                   </a>
-               <div>
-               </div>
-                   </section>
-                   <section>
-                       <h2> Zdjęcie z internetu</h2>
-                   </section>
-                   <section>
-                       <h2>SVG</h2>
-                       <svg width="350" height="220">
-                           <circle cx="50" cy="50" r="30" fill="red"/>
-                           <rect x="100" y="20" width="50" height="50" fill="blue"/>
-                           <polygon points="200,20 250,80 150,80" fill="green"/>
-                           <ellipse cx="150" cy"150" rx="40" ry"20" fill="orange"/>
-                       </svg>
-                   </section>
-                   <section>
-                       <h2> Przydatny link</h2>
-                       Wikipedia 
-                   </a>
-                   </section>
-               </main>
-                   <footer>
-                       <p>
-                           Eva Jeklin
-                       </p>
-                   </footer>
-               </body>
-               </html>
-                   
-                               
-                       
-               
 
-        
+     <main class="grid-container">
+         <section> class="hero card full-width">
+             <h2>Odkryj Hiszpanię</h2>
+             <p>Hiszpania jest jednym z najczęściej odwiedzanych krajów Europy.Znana jest z pięknych plaż, zabytków oraz wyjątkowej kultury.</p>
+             <img src="Hiszpania.jpg" alt="Panorama pięknego hiszpańskiego krajobrazu" class="responsive-img">
+         </section>
+
+         <section class="card full-width">
+             <h2>Dlaczego warto odwiedzić Hiszpanię?</h2>
+             <p>
+                 <strong>Hiszpania</strong> zachwyca wspaniałym klimatem, niezwykłą <u>architekturą</u> oraz wyśmienitą <em>kuchnią śródziemnomorską</em>.
+                 </p>
+             <p>Co roku odwiedzają ją miliony turystów z całego świata, szukających zarówno wypoczynku, jak i kulturowych uniesień.</p>
+             </section>
+
+         <section class="card full-width">
+             <h2>Najpopularniejsze miasta</h2>
+             <div class="gallery">
+                 <div class="city-card">
+                     <img src="walencja.jpg" alt="Walencja - widok na miasto" class="responsive-img">
+                     <h3>Walencja</h3>
+                     <p>Miasto sztuki, nauki i pięknych, piaszczystych plaż.</p>
+                     <a class="btn" href="walencja.html">Czytaj więcej</a>
+                     </div>
+
+                 <div class="city-card">
+                     <img src="barcelona.jpg" alt="Barcelona - architektura Gaudiego" class="responsive-img">
+                     <h3>Barcelona</h3>
+                     <p>Jedno z najdynamicjniejszych i najpiękniejszych miast Europy.</p>
+                     <a class="btn" href="barcelona.html">Czytaj więcej</a>
+                 </div>
+             </div>
+         </section>
+
+         <section class="card text-center">
+             <h2>Zdjęcie z internetu</h2>
+             <p>Poniższa grafika została załadowana bezpośrednio z zewnętrznego serwera za pomocą adresu URL:</p>
+             <img src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=800&q=80" alt="Słoneczna ulica w madrycie" class="responsive-img">
+         </section>
+
+         <section class="card text-center">
+             <h2>Grafika wektorowa SVG</h2>
+             <p>Kompozycja geometryczna reprezentująca nowoczesną sztukę hiszpańską (min. 5 kształtów):</p>
+                            <svg width="350" height="220" class="spain-svg" aria-label="Geometria hiszpańska">
+                                <circle cx="50" cy="50" r="30" fill="red"/>
+                                <rect x="100" y="20" width="50" height="50" fill="blue"/>
+                                <polygon points="200,20 250,80 150,80" fill="green"/>
+                                <ellipse cx="150" cy="150" rx="40" ry="20" fill="orange"/>
+                                <text x="230" y="160" fill="purple" font-family="sans-serif" font-size="20" font-weight="bold">OLE!</text>
+                            </svg>
+         </section>
+
+         <section class="card full-width text-center">
+             <h2>Przydatny link</h2>
+             <p>Aby dowiedzieć się więcej o historii i kulturze tego regionu, odwiedź zewnętrzny serwis:</p>
+             <a href="https://pl.wikipedia.org/wiki/Hiszpania" target="_blank" class="external-link">Wpis o Hiszpanii w serwisie Wikipedia</a>
+         </section>
+     </main>
+    <footer>
+        <p>Autor: <strong>Eva Jeklin</strong> | Numer studenta: <strong>s36706</strong></p>
+        <p>Projekt strony internetowej stworzony autorsko na potrzeby zaliczenia przedmiotu &copy; 2026.</p>
+    </footer>
 </body>
 </html>
+                    
+                    
+   
+ 
