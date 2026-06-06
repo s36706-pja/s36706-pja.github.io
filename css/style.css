@@ -62,10 +62,9 @@ img, svg {
         grid-column: span 1;
     }
 }
-img {
+img, svg {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 15px auto;
-    border-radius: 8px;
-}
+    margin: 20px auto !important;
+    border-radius: 12px;
