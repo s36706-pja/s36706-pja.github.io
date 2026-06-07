@@ -99,3 +99,9 @@ img, svg {
 .grid-container > .beach-section {
     grid-column: span 2;
 }
+.beach-section {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+}
