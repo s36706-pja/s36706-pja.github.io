@@ -57,7 +57,7 @@ img, svg {
 
 .beach-section {
     display: flex;
-    align-items: center
+    align-items: stretch;
     gap: 30px;
     max-width: 1100px;
     margin: 40px auto;
@@ -71,15 +71,13 @@ img, svg {
 .beach-image {
     flex: 40%;
     display: flex;
-    align-items: center;
 }
 
 .beach-image img {
     margin: 0;
     width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     border-radius: 12px;
 }
 
