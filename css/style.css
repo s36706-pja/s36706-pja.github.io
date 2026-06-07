@@ -35,16 +35,15 @@ nav {
 
 .btn {
     display: inline-block;
-    background-color: #ff5a00;
+    background: #ff5a00;
     color: white;
     text-decoration: none;
     padding: 8px 15px;
-    margin-top: 10px;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: #333333;
+    background: #333;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
@@ -52,8 +51,23 @@ img, svg {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 20px auto;
+    margin: 20px auto !important;
     border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .full-width {
+        grid-column: span 1;
+    }
+}
+
+
+.beach-text {
+    flex: 60%;
+    text-align: left;
 }
 
 .beach-section {
@@ -64,33 +78,20 @@ img, svg {
     margin: 40px auto;
 }
 
-.beach-text {
-    flex: 60%;
-    text-align: left;
-}
-
 .beach-image {
     flex: 40%;
 }
 
 .beach-image img {
-    margin: 0;
+    margin: 0 !important;
 }
 
 @media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-    .full-width {
-        grid-column: span 1;
-    }
     .beach-section {
         flex-direction: column;
         text-align: center;
     }
-    .beach-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    .beach-text, .beach-image {
+        flex: 100%;
+    }
 }
