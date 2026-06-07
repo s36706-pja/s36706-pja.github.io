@@ -68,6 +68,7 @@ img, svg {
     height: auto;
     margin: 20px auto !important;
     border-radius: 12px;
+}
 
 .btn {
     display: inline-block;
