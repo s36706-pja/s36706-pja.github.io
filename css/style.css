@@ -55,10 +55,9 @@ img, svg {
     border-radius: 12px;
 }
 
-/* Sekcja plaży */
 .beach-section {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
     max-width: 1100px;
     margin: 40px auto;
