@@ -90,9 +90,15 @@ img, svg {
         grid-column: span 1;
     }
     .beach-section {
-        flex-direction: column;
-        text-align: center;
-    }
+    grid-column: 1 / -1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
     .beach-text, .beach-image {
         flex: 100%;
     }
