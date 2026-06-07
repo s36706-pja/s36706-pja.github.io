@@ -70,13 +70,16 @@ img, svg {
 
 .beach-image {
     flex: 40%;
+    display: flex;
+    align-items: center;
 }
 
 .beach-image img {
     margin: 0;
     width: 100%;
     height: auto;
-    display: block;
+    max-height: 500px;
+    object-fit: contain;
     border-radius: 12px;
 }
 
