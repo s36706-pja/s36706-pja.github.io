@@ -92,3 +92,33 @@ img, svg {
     margin: 20px auto 0 auto !important;
     max-width: 100%;
 }
+.flex-container {
+    display: flex;
+    align-items: center; 
+    gap: 30px; 
+    max-width: 1100px; 
+    margin: 40px auto;
+
+.flex-text {
+    flex: 60%;
+    text-align: left;
+
+.flex-image {
+    flex: 40%;
+}
+
+.flex-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .flex-text, .flex-image {
+        flex: 100%;
+    }
+}
