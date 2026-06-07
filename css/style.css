@@ -82,3 +82,12 @@ img, svg {
     background-color: #333333;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+.text-center h3, .text-center p {
+    text-align: center !important;
+}
+
+.centered-img {
+    display: block !important;
+    margin: 20px auto 0 auto !important;
+    max-width: 100%;
+}
