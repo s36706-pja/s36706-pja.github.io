@@ -68,3 +68,17 @@ img, svg {
     height: auto;
     margin: 20px auto !important;
     border-radius: 12px;
+
+.btn {
+    display: inline-block;
+    background-color: #ff5a00;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+
+.btn:hover {
+    background-color: #333333;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
