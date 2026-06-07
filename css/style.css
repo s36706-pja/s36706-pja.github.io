@@ -51,8 +51,30 @@ img, svg {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 20px auto !important;
+    margin: 20px auto;
     border-radius: 12px;
+}
+
+/* Sekcja plaży */
+.beach-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.beach-text {
+    flex: 60%;
+    text-align: left;
+}
+
+.beach-image {
+    flex: 40%;
+}
+
+.beach-image img {
+    margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -62,31 +84,6 @@ img, svg {
     .full-width {
         grid-column: span 1;
     }
-}
-
-
-.beach-text {
-    flex: 60%;
-    text-align: left;
-}
-
-.beach-section {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    max-width: 1100px;
-    margin: 40px auto;
-}
-
-.beach-image {
-    flex: 40%;
-}
-
-.beach-image img {
-    margin: 0 !important;
-}
-
-@media (max-width: 768px) {
     .beach-section {
         flex-direction: column;
         text-align: center;
