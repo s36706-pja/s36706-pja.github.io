@@ -56,6 +56,7 @@ img, svg {
 }
 
 .beach-section {
+    grid-column: 1 / -1;
     display: flex;
     align-items: stretch;
     gap: 30px;
@@ -84,24 +85,15 @@ img, svg {
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
-}
+    }
     .full-width {
         grid-column: span 1;
-}
+    }
     .beach-section {
         flex-direction: column;
         text-align: center;
-}
+    }
     .beach-text, .beach-image {
         flex: 100%;
-}
-}
-.grid-container > .beach-section {
-    grid-column: span 2;
-}
-.beach-section {
-    grid-column: 1 / -1;
-    display: flex;
-    align-items: stretch;
-    gap: 30px;
+    }
 }
