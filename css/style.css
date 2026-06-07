@@ -83,42 +83,36 @@ img, svg {
     background-color: #333333;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-.text-center h3, .text-center p {
-    text-align: center !important;
-}
 
-.centered-img {
-    display: block !important;
-    margin: 20px auto 0 auto !important;
-    max-width: 100%;
-}
-.flex-container {
+    .beach-section {
     display: flex;
-    align-items: center; 
-    gap: 30px; 
-    max-width: 1100px; 
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
     margin: 40px auto;
+}
 
-.flex-text {
+.beach-text {
     flex: 60%;
     text-align: left;
+}
 
-.flex-image {
+.beach-image {
     flex: 40%;
 }
 
-.flex-image img {
+.beach-image img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 @media (max-width: 768px) {
-    .flex-container {
+    .beach-section {
         flex-direction: column;
         text-align: center;
     }
-    .flex-text, .flex-image {
+    .beach-text, .beach-image {
         flex: 100%;
     }
 }
