@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
 }
 
 header, footer {
@@ -22,37 +21,36 @@ nav {
     text-decoration: none;
 }
 
-main {
-    max-width: 1000px;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
 .card {
     background: #fff;
-    padding: 40px;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.card img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 12px;
+.full-width {
+    grid-column: span 2;
 }
 
 .beach-section {
+    grid-column: span 2;
     display: flex;
     align-items: center;
-    gap: 40px;
-    text-align: left;
+    gap: 30px;
 }
 
 .beach-text {
     flex: 60%;
+    text-align: left;
 }
 
 .beach-image {
@@ -67,7 +65,20 @@ main {
     border-radius: 12px;
 }
 
+.card img.responsive-img {
+    margin: 20px auto 0;
+    display: block;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
 @media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .full-width, .beach-section {
+        grid-column: span 1;
+    }
     .beach-section {
         flex-direction: column;
         text-align: center;
