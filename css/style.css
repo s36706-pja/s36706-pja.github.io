@@ -84,15 +84,18 @@ img, svg {
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
-    }
+}
     .full-width {
         grid-column: span 1;
-    }
+}
     .beach-section {
         flex-direction: column;
         text-align: center;
-    }
+}
     .beach-text, .beach-image {
         flex: 100%;
-    }
+}
+}
+.grid-container > .beach-section {
+    grid-column: span 2;
 }
